@@ -227,7 +227,7 @@
 </div>
 
 <footer style="text-align:center;padding:20px 24px;font-size:0.75rem;color:var(--text-muted);border-top:1px solid var(--border);background:var(--bg);flex-shrink:0;">
-  Made with 🌿 for Danish learners &nbsp;·&nbsp; Free forever &nbsp;·&nbsp; No sign-up &nbsp;·&nbsp; No tracking
+  Built for Danish learners &nbsp;·&nbsp; No sign-up &nbsp;·&nbsp; No tracking
 </footer>
 
 <!-- SESSION SETUP -->
@@ -393,7 +393,7 @@ function refreshLanding() {
   const s = loadS();
   document.getElementById('landing-total').textContent = allWords.length.toLocaleString();
   document.getElementById('landing-mastered').textContent = s.mastered.size;
-  document.getElementById('landing-accuracy').textContent = s.totalAnswered ? Math.round(s.totalCorrect/s.totalAnswered*100)+'%' : '—';
+  document.getElementById('landing-accuracy').textContent = (s.totalAnswered && s.totalAnswered > 0) ? Math.round(s.totalCorrect/s.totalAnswered*100)+'%' : '—';
   document.getElementById('landing-streak').textContent = s.streak||0;
 }
 
