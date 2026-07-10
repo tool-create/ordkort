@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ordkort — Free Danish Flashcards | Learn Danish Vocabulary</title>
+<meta name="description" content="Ordkort is a free Danish vocabulary trainer with 2,395 curated words, example sentences, spaced repetition, voice input and progress tracking. No sign-up needed.">
+<meta name="keywords" content="Danish flashcards, learn Danish, dansk ord, vocabulary trainer, Danish English, gratis dansk, ordkort, danskuddannelse">
+<meta name="google-adsense-account" content="ca-pub-8768787904894686">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8768787904894686" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Inter',sans-serif;background:#EFF3EF;color:#1A1A1A;line-height:1.6;}
+  header{background:#2C3E2D;padding:18px 32px;display:flex;align-items:center;justify-content:space-between;}
+  .logo{font-family:'Playfair Display',serif;font-size:1.5rem;color:#fff;letter-spacing:-0.02em;}
+  .logo span{color:#7A9E7E;}
+  nav a{color:#B8D4BB;text-decoration:none;font-size:0.85rem;margin-left:20px;}
+  nav a:hover{color:#fff;}
+  .hero{text-align:center;padding:80px 24px 60px;max-width:700px;margin:0 auto;}
+  .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.2rem);color:#2C3E2D;margin-bottom:18px;letter-spacing:-0.02em;line-height:1.15;}
+  .hero h1 em{font-style:italic;color:#7A9E7E;}
+  .hero p{font-size:1rem;color:#6B7B6C;max-width:500px;margin:0 auto 32px;}
+  .cta-btn{display:inline-block;background:#2C3E2D;color:#fff;padding:15px 36px;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;transition:background 0.2s;}
+  .cta-btn:hover{background:#3d5440;}
+  .stats{display:flex;gap:40px;justify-content:center;flex-wrap:wrap;padding:40px 24px;background:#fff;border-top:1px solid #D4DDD5;border-bottom:1px solid #D4DDD5;}
+  .stat{text-align:center;}
+  .stat-num{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:#2C3E2D;display:block;}
+  .stat-label{font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#6B7B6C;}
+  .features{padding:60px 24px;max-width:860px;margin:0 auto;}
+  .features h2{font-family:'Playfair Display',serif;font-size:1.8rem;color:#2C3E2D;text-align:center;margin-bottom:40px;}
+  .feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;}
+  .feature-card{background:#fff;border:1px solid #D4DDD5;border-radius:12px;padding:24px;}
+  .feature-icon{font-size:1.8rem;margin-bottom:12px;display:block;}
+  .feature-card h3{font-size:1rem;font-weight:600;color:#2C3E2D;margin-bottom:8px;}
+  .feature-card p{font-size:0.85rem;color:#6B7B6C;line-height:1.6;}
+  .words-section{background:#fff;padding:60px 24px;border-top:1px solid #D4DDD5;}
+  .words-section h2{font-family:'Playfair Display',serif;font-size:1.8rem;color:#2C3E2D;text-align:center;margin-bottom:32px;}
+  .word-table{max-width:700px;margin:0 auto;border-radius:12px;overflow:hidden;border:1px solid #D4DDD5;}
+  .word-row{display:grid;grid-template-columns:1fr 1fr 120px;padding:12px 18px;border-bottom:1px solid #D4DDD5;font-size:0.88rem;}
+  .word-row:last-child{border-bottom:none;}
+  .word-row.header{background:#2C3E2D;color:#fff;font-weight:600;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.06em;}
+  .word-row:not(.header):nth-child(even){background:#F7FAF7;}
+  .word-danish{font-weight:600;color:#2C3E2D;}
+  .word-type{color:#7A9E7E;font-size:0.78rem;}
+  .modules{padding:60px 24px;max-width:700px;margin:0 auto;}
+  .modules h2{font-family:'Playfair Display',serif;font-size:1.8rem;color:#2C3E2D;text-align:center;margin-bottom:32px;}
+  .module-list{display:flex;flex-direction:column;gap:12px;}
+  .module-item{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid #D4DDD5;border-radius:10px;padding:16px 20px;}
+  .module-badge{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;}
+  .module-item p{font-size:0.85rem;color:#6B7B6C;}
+  .module-item h3{font-size:0.92rem;font-weight:600;color:#2C3E2D;margin-bottom:3px;}
+  .cta-section{text-align:center;padding:60px 24px;background:#2C3E2D;}
+  .cta-section h2{font-family:'Playfair Display',serif;font-size:2rem;color:#fff;margin-bottom:16px;}
+  .cta-section p{color:#B8D4BB;margin-bottom:32px;}
+  .cta-btn-light{display:inline-block;background:#7A9E7E;color:#fff;padding:15px 36px;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;transition:background 0.2s;}
+  .cta-btn-light:hover{background:#5d8561;}
+  footer{text-align:center;padding:24px;font-size:0.78rem;color:#6B7B6C;border-top:1px solid #D4DDD5;background:#EFF3EF;}
+  footer a{color:#7A9E7E;text-decoration:none;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">ord<span>kort</span></div>
+  <nav>
+    <a href="/ordkort/">Start studying</a>
+    <a href="/ordkort/#about">About</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Learn Danish,<br><em>one card at a time</em></h1>
+  <p>A free Danish vocabulary trainer with over 2,395 curated words, real example sentences, voice input and progress tracking. No sign-up needed.</p>
+  <a href="/ordkort/" class="cta-btn">Start studying for free →</a>
+</div>
+
+<div class="stats">
+  <div class="stat"><span class="stat-num">2,395+</span><span class="stat-label">Danish words</span></div>
+  <div class="stat"><span class="stat-num">2,395</span><span class="stat-label">Example sentences</span></div>
+  <div class="stat"><span class="stat-num">5</span><span class="stat-label">Module levels</span></div>
+  <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Free</span></div>
+</div>
+
+<div class="features">
+  <h2>Everything you need to learn Danish</h2>
+  <div class="feature-grid">
+    <div class="feature-card">
+      <span class="feature-icon">🃏</span>
+      <h3>Smart Flashcards</h3>
+      <p>Study Danish→English or English→Danish. Cards adapt to your mistakes — words you miss appear more often.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">🎙️</span>
+      <h3>Voice Input</h3>
+      <p>Practice your pronunciation by speaking your answers aloud. Powered by your browser's speech recognition.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">🔁</span>
+      <h3>Spaced Repetition</h3>
+      <p>Words you've learned are scheduled for review at the perfect time — 1, 3, 7, 14, or 30 days later.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">📊</span>
+      <h3>Progress Tracking</h3>
+      <p>Track your streak, accuracy, mastered words and most missed words. All saved locally in your browser.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">🎯</span>
+      <h3>Module Filter</h3>
+      <p>Filter by Danskuddannelse 3 module level (1–5) so beginners and advanced learners both find the right words.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">📱</span>
+      <h3>Works Offline</h3>
+      <p>Install Ordkort on your phone or computer and study anywhere — no internet connection needed.</p>
+    </div>
+  </div>
+</div>
+
+<div class="words-section">
+  <h2>Sample vocabulary</h2>
+  <div class="word-table">
+    <div class="word-row header">
+      <span>Danish</span><span>English</span><span>Type</span>
+    </div>
+    <div class="word-row"><span class="word-danish">at bo</span><span>to live</span><span class="word-type">verbum</span></div>
+    <div class="word-row"><span class="word-danish">at tale</span><span>to speak, to talk</span><span class="word-type">verbum</span></div>
+    <div class="word-row"><span class="word-danish">hyggeligt</span><span>cozy, nice</span><span class="word-type">adjektiv</span></div>
+    <div class="word-row"><span class="word-danish">en arbejdsplads</span><span>a workplace</span><span class="word-type">substantiv</span></div>
+    <div class="word-row"><span class="word-danish">at have brug for</span><span>to need</span><span class="word-type">udtryk</span></div>
+    <div class="word-row"><span class="word-danish">selvfølgelig</span><span>of course</span><span class="word-type">adverbium</span></div>
+    <div class="word-row"><span class="word-danish">en fagforening</span><span>a trade union</span><span class="word-type">substantiv</span></div>
+    <div class="word-row"><span class="word-danish">ligestilling</span><span>gender equality</span><span class="word-type">substantiv</span></div>
+    <div class="word-row"><span class="word-danish">fordi</span><span>because</span><span class="word-type">konjuktion</span></div>
+    <div class="word-row"><span class="word-danish">at glæde sig til</span><span>to look forward to</span><span class="word-type">udtryk</span></div>
+  </div>
+</div>
+
+<div class="modules">
+  <h2>Aligned with Danskuddannelse 3</h2>
+  <div class="module-list">
+    <div class="module-item">
+      <div class="module-badge" style="background:#E8F5E9;color:#2C3E2D;">M1</div>
+      <div><h3>Module 1 — Basics</h3><p>Greetings, numbers, colors, family, essential verbs and everyday expressions.</p></div>
+    </div>
+    <div class="module-item">
+      <div class="module-badge" style="background:#E3F2FD;color:#1565C0;">M2</div>
+      <div><h3>Module 2 — Daily life</h3><p>Home, food, shopping, transport, body, weather and simple adjectives.</p></div>
+    </div>
+    <div class="module-item">
+      <div class="module-badge" style="background:#FFF8E1;color:#F57F17;">M3</div>
+      <div><h3>Module 3 — Work & health</h3><p>Job seeking, workplace, health situations and more complex vocabulary.</p></div>
+    </div>
+    <div class="module-item">
+      <div class="module-badge" style="background:#FCE4EC;color:#C62828;">M4</div>
+      <div><h3>Module 4 — Society</h3><p>Culture, relationships, Danish society, abstract nouns and nuanced expressions.</p></div>
+    </div>
+    <div class="module-item">
+      <div class="module-badge" style="background:#F3E5F5;color:#6A1B9A;">M5</div>
+      <div><h3>Module 5 — Advanced</h3><p>Professional, academic and advanced vocabulary for fluent communication.</p></div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-section">
+  <h2>Ready to learn Danish?</h2>
+  <p>Join thousands of learners. Free, no sign-up, no tracking.</p>
+  <a href="/ordkort/" class="cta-btn-light">Open Ordkort →</a>
+</div>
+
+<footer>
+  <p>© 2026 Ordkort &nbsp;·&nbsp; Built for Danish learners &nbsp;·&nbsp; No sign-up &nbsp;·&nbsp; No tracking &nbsp;·&nbsp;
+  <a href="/ordkort/">Start studying</a> &nbsp;·&nbsp;
+  <a href="mailto:mirayemirk@gmail.com">Contact</a></p>
+</footer>
+
+</body>
+</html>
